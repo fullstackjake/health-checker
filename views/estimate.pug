@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1 Hello #{firstName}
+  p Here are your details
+  p Name: #{firstName} #{lastName}
+  p Phone Number: #{phoneNumber}
+  p Insurance Carrier Id: #{memberId}
+  p Date of Birth: #{birthDate}
+  h2 Estimated Copay Based On Your Details
+  p Coverage Status: #{coverageStatus}
+  p Copay Level: #{copayLevel}
+  p.copayNumber $#{copay}
+  p #{coverageDate}
+  |
+  |
+  a.btn.btn-primary(href='/') Start Over

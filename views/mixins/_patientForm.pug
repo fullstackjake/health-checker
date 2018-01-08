@@ -1,0 +1,16 @@
+mixin patientForm()
+  form.mainForm(method='POST')
+    .row
+      .form-group.col-lg-6
+        label(for='firstName') First Name
+        input#firstName.form-control(type='text', placeholder='First Name', name='firstName')
+      .form-group.col-lg-6
+        label(for='lastName') Last Name
+        input#lastName.form-control(type='text', placeholder='Last Name', name='lastName')
+      .form-group.col-lg-6
+        label(for='memberId') ID
+        input#memberId.form-control(type='text', placeholder='ID', name='memberId')
+      .form-group.col-lg-6
+        label(for='birthDate') Birth Date
+        input#birthDate.form-control(type='date', name='birthDate')
+      button.btn.btn-primary(type='submit') Submit

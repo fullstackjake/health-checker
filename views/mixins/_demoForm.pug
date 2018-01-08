@@ -1,0 +1,30 @@
+mixin demoForm()
+  h1 Please Input Your Details
+  form.mainForm(method='POST', action='/patient')
+    .row
+      .form-group.col-lg-6
+        label(for='firstName') First Name
+        input#firstName.form-control(type='text', placeholder='First Name', name='firstName', required="")
+      .form-group.col-lg-6
+        label(for='lastName') Last Name
+        input#lastName.form-control(type='text', placeholder='Last Name', name='lastName', required="")
+      .form-group.col-lg-6
+        label(for='birthDate') Birth Date
+        input#birthDate.form-control(type='date', name='birthDate', required="")
+      .form-group.col-lg-6
+        label(for='phoneNumber') Phone
+        input#phoneNumber.form-control(type='tel', name='phoneNumber', required="")
+      .col-lg-12
+        h2 Do you have health insurance?
+      .col-lg-12
+        .form-check
+          input#yesins.form-check-input(type='radio', name='ins', value='Yes', checked='')
+          label.form-check-label(for='yesins')
+            | Yes
+        .form-check
+          input#noins.form-check-input(type='radio', name='ins', value='No')
+          label.form-check-label(for='noins')
+            | No
+    .row.space_button        
+      .col-lg-12
+        button.btn.btn-primary(type='submit') Next
