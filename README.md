@@ -13,7 +13,7 @@ git clone https://github.com/fullstackjake/health-checker.git && cd health-check
 Then start Application
 
 ```
-npm start
+node start or nodemon start
 ```
 
 # Database
