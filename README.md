@@ -16,6 +16,8 @@ Then start Application
 npm start or nodemon start
 ```
 
+And navigate to [localhost:3000](http://localhost:3000/)
+
 # Database
 To view database content please use a GUI such as [MongoDB Compass](https://www.mongodb.com/products/compass)  or [Humongous](https://www.humongous.io/) 
 
